@@ -24,7 +24,7 @@ body {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    /* outline: 2px solid tomato; */
+    outline: 2px solid tomato;
 }
 /* header */
 .header {
@@ -57,6 +57,7 @@ body {
 .nav-content:not(:last-child) {
     margin-right: 50px;
 }
+/* Common for all lists */
 .list {
     margin: 0px;
     padding: 0px;
@@ -88,6 +89,17 @@ body {
 .contacts-item:not(:last-child) {
 margin-right: 50px;
 }
+
+/* .contacts-mail::before {
+    display: inline-block;
+    content:"";
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    background-color: #fff;
+    background-image: url();
+    background-size: contain;
+} */
 .contacts-mail,
 .contacts-tel {
     display: block;
@@ -107,14 +119,27 @@ margin-right: 50px;
 }
 .contacts-tel:hover,
 .contacts-tel:focus {
-    color: var(--special-text-color);}
+    color: var(--special-text-color);
+}
+/* Common fo all sections */
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 /* service order */
 .hero {
     background-color: var(--special-bg-color);
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
-    
+/* added backgroung photo */
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-image.jpg);
+    background-repeat: no-repeat;
+    background-position: contain;
 }
 .title {
     display: inline-block;
@@ -151,16 +176,35 @@ margin-right: 50px;
     letter-spacing: 0.06em;
 }
 /* Company rules */
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 .rules-list {
     display: flex;
 }
 .rules-item:not(:last-child) {
     margin-right: 30px;
 }
+.rules-item::before {
+    content: "";
+    display: block;
+    height: 120px;
+    margin-bottom: 30px;
+   background-size: auto auto;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-color: #F5F4FA;
+}
+.satelite::before {
+    background-image: url(../images/Vector\ 1.png);
+}
+.clock::before {
+    background-image: url(../images/Vector\ 2.png);
+}
+.laptop::before {
+    background-image: url(../images/Vector\ 3.png);
+}
+.spaceman::before {
+    background-image: url(../images/astronaut\ 1.png);
+}
+
 .rules-item {
     width: 270px;
 }
@@ -232,6 +276,14 @@ margin-right: 30px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
+    text-align: center;
+}
+/* Clients */
+.clients-title {
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
     text-align: center;
 }
 /* footer */
