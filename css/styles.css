@@ -59,7 +59,7 @@ body {
 }
 /* Common for all lists */
 .list {
-    margin: 0px;,
+    margin: 0px;
     padding: 0px;
     list-style: none;
 }
@@ -320,6 +320,7 @@ margin-right: 30px;
     display: flex;
     justify-content: center;
     gap: 30px;
+    padding: 0;
 }
 .clients-link {
     display: flex;
@@ -327,12 +328,54 @@ margin-right: 30px;
     align-items: center;
     width: 170px;
     height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
 }
-/* footer */
+.clients-icon {
+    fill: #AFB1B8;
+}
+.clients-link:hover,
+.clients-link:focus {
+    border: 1px solid var(--special-text-color)
+}
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+    fill: var(--special-text-color)
+}
+
+/* -----------------footer----------------- */
 .footer {
     background-color: var(--special-bg-color);
     padding-top: 60px;
     padding-bottom: 60px;
+}
+.general {
+    display: flex;
+}
+.first {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.social {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 12px;
+}
+.soc-text {
+    margin-bottom: 20px;
+
+    color: var(--main-bg-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+.soc {
+background: rgba(255, 255, 255, 0.1);
+}
+.icon {
+    fill: var(--main-bg-color)
 }
 .footer-logo {
     display: inline-block;
@@ -345,6 +388,12 @@ margin-right: 30px;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+}
+.address-list {
+    padding: 0;
+}
+.foot {
+    padding: 0;
 }
 .location {
     display: inline-block;
@@ -385,7 +434,7 @@ margin-right: 30px;
     color: var(--special-text-color)
 }
 
-/* PORTFOLIO */
+/* ----------------PORTFOLIO---------------- */
 
 .btn-list {
     display: flex;
