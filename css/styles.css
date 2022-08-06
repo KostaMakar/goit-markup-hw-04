@@ -149,12 +149,12 @@ margin-right: 50px;
     text-align: center;
 /* added backgroung photo */
     max-width: 1600px;
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-image.jpg);
     background-repeat: no-repeat;
-    background-position: contain;
+    background-position: center;
+    background-size: cover;
 }
 .title {
     display: inline-block;
@@ -339,7 +339,7 @@ margin-right: 30px;
 }
 .clients-link:hover,
 .clients-link:focus {
-    border: 1px solid var(--special-text-color)
+    border-color: var(--special-text-color);
 }
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon {
