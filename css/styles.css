@@ -490,6 +490,7 @@ background: rgba(255, 255, 255, 0.1);
 }
 .images-link {
     display: block;
+    text-decoration: none;
 }
 .images-link:hover,
 .images-link:focus {
